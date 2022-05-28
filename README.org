@@ -24,7 +24,7 @@ A clock scroll-er and pre built data style expense tracker.
 
 ** Create the Base UI
 *** Home
-- [x] [x] [x] +Add infinite scroll+
+- [x] +Add infinite scroll+
 - [ ] Add neumorphic box for the counter
   - [ ] Add neumorphic box for the adder
 - [ ] Add Submit
