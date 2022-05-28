@@ -1,67 +1,78 @@
 #+TITLE: Expenses
 #+DATE: 26-5-22
 #+AUTHOR: Skshm
-
-* expense_track
+#+STARTUP: show2levels*
+# Local Variables:
+# eval: (rainbow-mode)
+# End:
 
 A clock scroll-er and pre built data style expense tracker.
 
-** TODO
+* Colours picked
+** Gradients
++ Light gradient
+  - #17EAD9
+  - #6078EA
++ Dark gradient
+  - #5B247A
+  - #1BCEDF
+** Colours
+* TODO the Designing
+** Bottom UI
+- [x] +Make A bottom nav bar+
+- [x] +Look for UI Designs on Dribble+
 
-*** Bottom UI
-- [x] ~~Make A bottom nav bar~~
-- [x] ~~Look for UI Designs on Dribble~~
-
-*** Create the Base UI
-**** Home
-- [x] ~~Add infinite scroll~~
+** Create the Base UI
+*** Home
+- [x] [x] [x] +Add infinite scroll+
 - [ ] Add neumorphic box for the counter
   - [ ] Add neumorphic box for the adder
-- [ ] Add Submit button
+- [ ] Add Submit
+  USE a slider to pick the business
   - [ ] Add Spent Account picker
 - [ ] Add spent "area" picker somehow
 
-**** Balance
+*** Balance
 - [ ] Add Cards View
 - [ ] Add Wallet access
   - [ ] Add ability to access cards from bank or sms
 - [ ] Smooth UI
 
-**** Transaction
+*** Transaction
 - [ ] Add a graph view
 - [ ] List of places spent
 - [ ] Add neumorphic Boxes
 
-**** Profile
+*** Profile
 - [ ] Picture
 - [ ] Export to drive option
 - [ ] Dark n Light Mode
 - [ ] =Support the maker?=
 
-*** UI the pages
+** UI the pages
 - [ ] UI the Home
 - [ ] UI the Transaction
 - [ ] UI the Balance
 - [ ] UI the Account
 
-*** Most Important
+** Most Important
 - [ ] Set-up MySQL
 - [ ] Find way to save data, `users cloud?`
 
-*** Finalization
+** Finalization
 - [ ] Create A User page for settings
 - [ ] App Icon
 - [ ] Desktop App design
 
-** Tutorials Used
+* Tutorials Used
 - [[youtube:WG4y47qGPX4][Bottom Navigation bar by Benjamin Carlson]]
 
-*** Neumorphic Sources
+** Neumorphic Sources
 - [[https://neumorphism.io][Style Finder]]
 - [[youtube:A2Bbhr3DGd0][Button #1]]
 - [[youtube:eV1UNxgJvPI][Button #2]]
 
-** About Packages
+* About Packages
 A brief as possible intro to the packages that are imported.
 
 + [[https:pub.dev/packages/curved_navigation_bar][Curved nav]]

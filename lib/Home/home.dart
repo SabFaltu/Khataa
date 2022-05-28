@@ -38,7 +38,7 @@ class __ExpenseValsState extends State<_ExpenseVals> {
   // Widget Vals
   final _infiLoop = true;
   final _numHapticc = true;
-  final _numStyle = TextStyle(fontSize: 30);
+  final _numStyle = const TextStyle(fontSize: 30);
   final _numCount = 5;
   final _numHeight = 65.0;
   final _numWidth = 55.0;
