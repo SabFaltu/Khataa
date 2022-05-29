@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # खाता
+=======
+# खता
+>>>>>>> main
 
 A clock scroller and pre built data style expense tracker.
 
