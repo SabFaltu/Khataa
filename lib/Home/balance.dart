@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 class Balance extends StatelessWidget {
   const Balance({Key? key}) : super(key: key);

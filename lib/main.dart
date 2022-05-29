@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:expense_track/nav.dart';
+import 'package:khataa/nav.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
