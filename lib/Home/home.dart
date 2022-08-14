@@ -7,6 +7,26 @@ import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
 //import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:numberpicker/numberpicker.dart';
 
+class CustomDecors {
+  BoxDecoration baseBoxDecoration = BoxDecoration(
+      borderRadius: BorderRadius.circular(25),
+      color: const Color.fromARGB(255, 48, 48, 48),
+      boxShadow: const [
+        BoxShadow(
+          blurRadius: 20.0,
+          offset: Offset(-10, -10),
+          color: Color.fromARGB(255, 63, 63, 63),
+          //inset: true,
+        ),
+        BoxShadow(
+          blurRadius: 20.0,
+          offset: Offset(10, 10),
+          color: Color.fromARGB(255, 33, 33, 33),
+          //inset: true,
+        ),
+      ]);
+}
+
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -53,27 +73,11 @@ class __ExpenseValsState extends State<_ExpenseVals> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: [
-        const SizedBox(height: 40),
+        const SizedBox(height: 20),
         Container(
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-              color: const Color.fromARGB(255, 48, 48, 48),
-              boxShadow: const [
-                BoxShadow(
-                  blurRadius: 20.0,
-                  offset: Offset(-10, -10),
-                  color: Color.fromARGB(255, 63, 63, 63),
-                  //inset: true,
-                ),
-                BoxShadow(
-                  blurRadius: 20.0,
-                  offset: Offset(10, 10),
-                  color: Color.fromARGB(255, 33, 33, 33),
-                  //inset: true,
-                ),
-              ]),
+          decoration: CustomDecors().baseBoxDecoration,
           child: Row(
             children: <Widget>[
               const SizedBox(height: 16),
@@ -90,6 +94,13 @@ class __ExpenseValsState extends State<_ExpenseVals> {
                 maxValue: 9,
                 onChanged: (value) => setState(() => _valThos = value),
               ),
+            ],
+          ),
+        ),
+        Container(
+          decoration: CustomDecors().baseBoxDecoration,
+          child: Row(
+            children: <Widget>[
               const SizedBox(height: 16),
               NumberPicker(
                 infiniteLoop: _infiLoop,
@@ -99,11 +110,18 @@ class __ExpenseValsState extends State<_ExpenseVals> {
                 selectedTextStyle: _selectNumStyle,
                 textStyle: _numStyle,
                 haptics: _numHapticc,
-                value: _valHuns,
+                value: _valThos,
                 minValue: 0,
                 maxValue: 9,
                 onChanged: (value) => setState(() => _valHuns = value),
               ),
+            ],
+          ),
+        ),
+        Container(
+          decoration: CustomDecors().baseBoxDecoration,
+          child: Row(
+            children: <Widget>[
               const SizedBox(height: 16),
               NumberPicker(
                 infiniteLoop: _infiLoop,
@@ -113,11 +131,18 @@ class __ExpenseValsState extends State<_ExpenseVals> {
                 selectedTextStyle: _selectNumStyle,
                 textStyle: _numStyle,
                 haptics: _numHapticc,
-                value: _valTens,
+                value: _valThos,
                 minValue: 0,
                 maxValue: 9,
                 onChanged: (value) => setState(() => _valTens = value),
               ),
+            ],
+          ),
+        ),
+        Container(
+          decoration: CustomDecors().baseBoxDecoration,
+          child: Row(
+            children: <Widget>[
               const SizedBox(height: 16),
               NumberPicker(
                 infiniteLoop: _infiLoop,
@@ -127,7 +152,7 @@ class __ExpenseValsState extends State<_ExpenseVals> {
                 selectedTextStyle: _selectNumStyle,
                 textStyle: _numStyle,
                 haptics: _numHapticc,
-                value: _valOnes,
+                value: _valThos,
                 minValue: 0,
                 maxValue: 9,
                 onChanged: (value) => setState(() => _valOnes = value),
