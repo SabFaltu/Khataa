@@ -81,3 +81,5 @@ A brief as possible intro to the packages that are imported.
   Scrolling Numbers
 + [[https:pub.dev/packages/flutter_neumorphic][Neumorphic Theming]]
   Easier Neumorphic buttons and themeing
++ [[https://pub.dev/packages/slide_to_confirm][Slide To Confirm]]
+  A simple package to make a button slide to confirm

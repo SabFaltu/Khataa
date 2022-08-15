@@ -2,9 +2,9 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 import 'package:khataa/Home/home.dart';
-import 'package:khataa/Home/transaction.dart';
-import 'package:khataa/Home/balance.dart';
-import 'package:khataa/Home/profile.dart';
+import 'package:khataa/Transac/transaction.dart';
+import 'package:khataa/Balance/balance.dart';
+import 'package:khataa/Profile/profile.dart';
 
 class Nav extends StatefulWidget {
   const Nav({Key? key}) : super(key: key);
